@@ -1,0 +1,108 @@
+# Testaus ja validointi – Tehtävälista
+
+## 1. Testauksen tavoite
+
+Testauksen tavoitteena on varmistaa, että tehtävälistasovellus toimii projektin määrittelyn mukaisesti.
+
+Testauksessa tarkistetaan sovelluksen keskeiset toiminnot sekä tärkeimmät virhetilanteet.
+
+Testit perustuvat tiedostossa [01-projektikuvaus.md](01-projektikuvaus.md) määriteltyihin vaatimuksiin.
+
+## 2. Testausympäristö
+
+Sovellus on tarkoitus testata tavallisessa verkkoselaimessa.
+
+Suunniteltu testausympäristö:
+
+- Käyttöjärjestelmä: Windows
+- Selain: Google Chrome, Microsoft Edge tai Firefox
+- Ohjelmointitekniikat: HTML, CSS ja JavaScript
+- Tallennus: selaimen localStorage
+
+Toteutuneet testausympäristöt kirjataan testauksen yhteydessä.
+
+## 3. Testitapaukset
+
+| Testi | Vaatimus | Testitapa | Odotettu tulos |
+|---|---|---|---|
+| T1 | V1 | Kirjoitetaan "Tee koulutehtävä" ja lisätään se | Tehtävä ilmestyy listaan |
+| T2 | V2 | Lisätään kolme erilaista tehtävää | Kaikki kolme näkyvät |
+| T3 | V3 | Merkitään tehtävä valmiiksi | Tehtävän tila muuttuu valmiiksi |
+| T4 | V4 | Poistetaan yksi tehtävä | Valittu tehtävä katoaa listalta |
+| T5 | V5 | Lisätään tehtävä ja päivitetään sivu | Tehtävä säilyy |
+| T6 | V6 | Yritetään lisätä tyhjä tehtävä | Tyhjää tehtävää ei lisätä |
+| T7 | V6 | Syötetään vain välilyöntejä | Tehtävää ei lisätä |
+| T8 | V7 | Avataan sovellus ilman kirjautumista | Sovellusta voi käyttää |
+
+## 4. Testitulokset
+
+Testejä ei ole vielä suoritettu. Tulokset täydennetään sovelluksen toteutuksen jälkeen.
+
+| Testi | Havaittu tulos | Tila |
+|---|---|---|
+| T1 | Ei vielä testattu | Odottaa |
+| T2 | Ei vielä testattu | Odottaa |
+| T3 | Ei vielä testattu | Odottaa |
+| T4 | Ei vielä testattu | Odottaa |
+| T5 | Ei vielä testattu | Odottaa |
+| T6 | Ei vielä testattu | Odottaa |
+| T7 | Ei vielä testattu | Odottaa |
+| T8 | Ei vielä testattu | Odottaa |
+
+Testauksen yhteydessä kirjataan todellinen havainto ja merkitään testi hyväksytyksi tai hylätyksi sen perusteella.
+
+## 5. Virhe- ja rajatapausten testaus
+
+Sovellukselle on suunniteltu seuraavat rajatapaustestit:
+
+**Tyhjän tehtävän lisääminen**
+
+Käyttäjä yrittää lisätä tehtävän ilman tekstiä. Sovelluksen tulee estää tyhjän tehtävän lisääminen.
+
+**Pelkkien välilyöntien lisääminen**
+
+Käyttäjä kirjoittaa pelkkiä välilyöntejä ja yrittää lisätä tehtävän. Sovelluksen tulee estää lisäys.
+
+**Sivun päivittäminen**
+
+Käyttäjä lisää tehtävän ja päivittää selaimen sivun. Tallennettujen tehtävien tulee näkyä edelleen.
+
+**Poistetun tehtävän säilyvyys**
+
+Käyttäjä poistaa tehtävän ja päivittää sivun. Poistettu tehtävä ei saa ilmestyä takaisin.
+
+Näistä kirjataan toteutuneet havainnot, kun testaus suoritetaan.
+
+## 6. Käyttäjätarpeen validointi
+
+Projektin alkuperäisenä tavoitteena on auttaa käyttäjää muistamaan ja hallitsemaan päivittäisiä tehtäviään.
+
+Validointi suunnitellaan seuraavasti:
+
+1. Käyttäjä lisää kolme koulutehtävää listalle.
+2. Hän merkitsee yhden tehtävän valmiiksi.
+3. Hän poistaa tarpeettoman tehtävän.
+4. Hän päivittää selaimen sivun.
+5. Hän tarkistaa, että jäljellä olevat tehtävät ja niiden tilat ovat oikein.
+
+Validoinnissa arvioidaan, onnistuuko käyttäjän tavoite ja helpottaako sovellus tehtävien seuraamista.
+
+Kokeilu tehdään sovelluksen valmistuttua. Kokeilun tekijä, havainnot ja johtopäätökset kirjataan tähän dokumenttiin.
+
+## 7. Tunnetut rajoitukset
+
+Suunnitellun toteutuksen rajoituksia ovat:
+
+- Sovellus toimii paikallisesti selaimessa.
+- Tehtävät eivät synkronoidu eri laitteiden välillä.
+- Käyttäjä ei voi jakaa tehtäviä muiden kanssa.
+- Selaimen paikallisten tietojen poistaminen voi hävittää tehtävät.
+- Sovellus ei sisällä käyttäjätunnuksia tai tietokantaa.
+
+Toteutuksen aikana havaitut muut puutteet ja virheet dokumentoidaan testauksen yhteydessä.
+
+## 8. Testauksen johtopäätökset
+
+Johtopäätökset kirjoitetaan, kun sovellus on testattu.
+
+Niissä arvioidaan, mitkä vaatimukset täyttyivät, mitkä jäivät toteutumatta ja vastaako ratkaisu alkuperäiseen käyttäjätarpeeseen.
