@@ -4,4 +4,4 @@ Yksinkertainen verkkosovellus, jolla käyttäjä voi lisätä, merkitä valmiiks
 
 ## Projektin määrittely
 
-Lue [projektin määrittely ja hyväksymiskriteerit](docs/01-projektikuvaus.md).
+Lue [projektin määrittely ja hyväksymiskriteerit](01-projektikuvaus.md).
