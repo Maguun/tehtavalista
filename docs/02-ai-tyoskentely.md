@@ -48,8 +48,8 @@ Projekti toteutetaan kahden opiskelijan yhteistyönä.
 
 Suunniteltu työnjako:
 
-- **Opiskelija 1:** Käyttöliittymän toteutukseen ja tehtävien lisäämiseen osallistuminen.
-- **Opiskelija 2:** Tehtävien valmiiksi merkitsemiseen, poistamiseen ja tallennukseen osallistuminen.
+- **Max Vehman:** Käyttöliittymän toteutukseen ja tehtävien lisäämiseen osallistuminen.
+- **Tom Carlas:** Tehtävien valmiiksi merkitsemiseen, poistamiseen ja tallennukseen osallistuminen.
 - **Molemmat:** Vaatimusten tarkistaminen, testaus, dokumentointi ja toisen tekemien muutosten katselmointi.
 
 Lopullinen työnjako ja kummankin todelliset työvaiheet dokumentoidaan toteutuksen aikana. Molemmat osallistuvat ohjelmiston suunnitteluun, toteutukseen ja tarkistamiseen.
