@@ -1,4 +1,4 @@
-# Tehtävälista – projektin määrittely
+# Tehtävälista - projektin määrittely
 
 ## Käyttäjä, tarve ja hyöty
 
