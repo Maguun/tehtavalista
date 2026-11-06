@@ -1,4 +1,4 @@
-# Tehtävälista – ToDo-sovellus
+# Tehtävälista - ToDo-sovellus
 
 Yksinkertainen verkkosovellus, jolla käyttäjä voi lisätä, merkitä valmiiksi ja poistaa tehtäviä.
 
