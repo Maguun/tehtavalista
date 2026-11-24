@@ -28,11 +28,10 @@ Testitulokset ja käyttäjätarpeen validointi löytyvät tiedostosta [03-testau
 
 **Täydellinen commit-tunniste:** Lisätään lopullisen version tallentamisen jälkeen.
 
-**Palautuspäivä:** Lisätään palautuksen yhteydessä.
-
+**Palautuspäivä:** 24.11.
 ## Projektivideo
 
-**Videolinkki:** Lisätään, kun video on valmis ja sen katseluoikeudet on tarkistettu.
+**Videolinkki:** https://metropoliafi-my.sharepoint.com/:v:/g/personal/maxve_metropolia_fi/IQBzew1CkdTFRoifMA_j1InjAdV6CUyMlZ15osaddinb8r0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fIgtiT
 
 Videolla esitellään sovelluksen keskeinen käyttötapaus, testauksen tulos, tunnettu rajoitus ja molempien tekijöiden osuudet.
 
