@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yksinkertainen tehtävälista opiskeluun ja arkeen.">
+  <title>Tehtävälista</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app" aria-labelledby="page-title">
+    <header>
+      <p class="eyebrow">Oma arki järjestykseen</p>
+      <h1 id="page-title">Tehtävälista</h1>
+      <p class="intro">Lisää tehtävät, merkitse tehdyt valmiiksi ja pidä lista ajan tasalla.</p>
+    </header>
+
+    <section class="panel" aria-label="Tehtävien hallinta">
+      <form id="task-form" novalidate>
+        <label for="task-input">Uusi tehtävä</label>
+        <div class="input-row">
+          <input id="task-input" name="task" type="text" maxlength="120" placeholder="Esim. Palauta koulutehtävä" autocomplete="off" required>
+          <button type="submit" class="primary">Lisää</button>
+        </div>
+        <p id="error-message" class="error" role="alert" hidden></p>
+      </form>
+
+      <div class="list-heading">
+        <h2>Omat tehtävät</h2>
+        <p id="task-count" class="count" aria-live="polite">0 tehtävää</p>
+      </div>
+      <p id="empty-message" class="empty">Ei vielä tehtäviä. Lisää ensimmäinen yllä!</p>
+      <ul id="task-list" class="task-list" aria-label="Tehtävät"></ul>
+    </section>
+    <p class="footnote">Tehtävät tallennetaan vain tämän selaimen paikalliseen tallennustilaan.</p>
+  </main>
+</body>
+</html>
