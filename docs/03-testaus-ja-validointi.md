@@ -122,7 +122,7 @@ Validoinnissa arvioidaan, onnistuuko käyttäjän tavoite ja helpottaako sovellu
 
 Kokeilu tehdään sovelluksen valmistuttua. Kokeilun tekijä, havainnot ja johtopäätökset kirjataan tähän dokumenttiin.
 
-Käytännön kokeilu:
+**Käytännön kokeilu:**
 
 Sovellusta kokeiltiin käytännössä lisäämällä, merkitsemällä valmiiksi ja poistamalla tehtäviä. Lisäksi tarkistettiin tehtävien säilyminen sivun päivittämisen jälkeen.
 
