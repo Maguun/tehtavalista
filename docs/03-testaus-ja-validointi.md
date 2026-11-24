@@ -36,22 +36,48 @@ Toteutuneet testausympäristöt kirjataan testauksen yhteydessä.
 
 ## 4. Testitulokset
 
-Testejä ei ole vielä suoritettu. Tulokset täydennetään sovelluksen toteutuksen jälkeen.
+Tehtävälistasovellusta testattiin GitHub Pagesissa julkaistulla versiolla:
 
-| Testi | Havaittu tulos | Tila |
-|---|---|---|
-| T1 | Ei vielä testattu | Odottaa |
-| T2 | Ei vielä testattu | Odottaa |
-| T3 | Ei vielä testattu | Odottaa |
-| T4 | Ei vielä testattu | Odottaa |
-| T5 | Ei vielä testattu | Odottaa |
-| T6 | Ei vielä testattu | Odottaa |
-| T7 | Ei vielä testattu | Odottaa |
-| T8 | Ei vielä testattu | Odottaa |
+https://maguun.github.io/tehtavalista/
 
-Testauksen yhteydessä kirjataan todellinen havainto ja merkitään testi hyväksytyksi tai hylätyksi sen perusteella.
+Testauksessa kokeiltiin tehtävien lisäämistä, näyttämistä, valmiiksi merkitsemistä, tallennuksen säilymistä, poistamista ja tyhjän syötteen käsittelyä.
 
-## 5. Virhe- ja rajatapausten testaus
+### Suoritetut testit
+
+| Testi | Vaatimus | Testitapa | Odotettu tulos | Havaittu tulos | Tila |
+|---|---|---|---|---|---|
+| T1 | V1 | Lisättiin tehtävä | Tehtävä näkyy listassa | Tehtävä ilmestyi listaan | Hyväksytty |
+| T2 | V2 | Lisättiin toinen tehtävä | Molemmat tehtävät näkyvät | Molemmat tehtävät näkyivät | Hyväksytty |
+| T3 | V3 | Merkittiin tehtävä valmiiksi | Tehtävän tila muuttuu | Tehtävän tila muuttui | Hyväksytty |
+| T4 | V5 | Päivitettiin sivu | Tehtävät ja niiden tilat säilyvät | Tehtävät ja valmiustila säilyivät | Hyväksytty |
+| T5 | V4 | Poistettiin tehtävä | Tehtävä katoaa listasta | Tehtävä poistui listasta | Hyväksytty |
+| T6 | V6 | Yritettiin lisätä tyhjä tehtävä | Tyhjää tehtävää ei lisätä | Tyhjää tehtävää ei lisätty | Hyväksytty |
+
+### Testauksen yhteenveto
+
+- Suoritettuja testejä: 6
+- Hyväksyttyjä testejä: 6
+- Epäonnistuneita testejä: 0
+
+Kaikki suoritetut testit vastasivat odotettua toimintaa.
+
+Testaus osoittaa, että sovelluksen keskeiset tehtävien hallintatoiminnot toimivat kokeilluissa tilanteissa.
+
+Vaatimuksen V6 pelkkiä välilyöntejä sisältävää syötettä ja vaatimuksen V7 kirjautumattoman käytön testausta ei ole vielä kirjattu erillisiksi testeiksi. Myöskään poistetun tehtävän pysyvyyttä sivun päivittämisen jälkeen ei vielä varmistettu erikseen.
+
+## 5. Testauksen johtopäätökset
+
+Suoritettujen testien perusteella tehtävälistasovelluksen keskeiset ominaisuudet toimivat odotetusti.
+
+Käyttäjä pystyi lisäämään ja poistamaan tehtäviä, merkitsemään tehtävän valmiiksi sekä säilyttämään tehtävät sivun päivittämisen jälkeen.
+
+Myös tyhjän tehtävän lisäämisen estäminen toimi odotetusti.
+
+Testit tukevat johtopäätöstä, että sovellus soveltuu yksinkertaiseen tehtävien hallintaan. Varsinainen käyttäjätarpeen validointi dokumentoidaan erikseen käytännön käyttökokeilun jälkeen.
+
+Testaus ei vielä osoita sovelluksen toimintaa kaikilla selaimilla tai laitteilla.
+
+## 6. Virhe- ja rajatapausten testaus
 
 Sovellukselle on suunniteltu seuraavat rajatapaustestit:
 
@@ -73,7 +99,7 @@ Käyttäjä poistaa tehtävän ja päivittää sivun. Poistettu tehtävä ei saa
 
 Näistä kirjataan toteutuneet havainnot, kun testaus suoritetaan.
 
-## 6. Käyttäjätarpeen validointi
+## 7. Käyttäjätarpeen validointi
 
 Projektin alkuperäisenä tavoitteena on auttaa käyttäjää muistamaan ja hallitsemaan päivittäisiä tehtäviään.
 
@@ -89,7 +115,7 @@ Validoinnissa arvioidaan, onnistuuko käyttäjän tavoite ja helpottaako sovellu
 
 Kokeilu tehdään sovelluksen valmistuttua. Kokeilun tekijä, havainnot ja johtopäätökset kirjataan tähän dokumenttiin.
 
-## 7. Tunnetut rajoitukset
+## 8. Tunnetut rajoitukset
 
 Suunnitellun toteutuksen rajoituksia ovat:
 
@@ -100,9 +126,3 @@ Suunnitellun toteutuksen rajoituksia ovat:
 - Sovellus ei sisällä käyttäjätunnuksia tai tietokantaa.
 
 Toteutuksen aikana havaitut muut puutteet ja virheet dokumentoidaan testauksen yhteydessä.
-
-## 8. Testauksen johtopäätökset
-
-Johtopäätökset kirjoitetaan, kun sovellus on testattu.
-
-Niissä arvioidaan, mitkä vaatimukset täyttyivät, mitkä jäivät toteutumatta ja vastaako ratkaisu alkuperäiseen käyttäjätarpeeseen.
