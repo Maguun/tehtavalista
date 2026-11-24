@@ -40,42 +40,49 @@ Tehtävälistasovellusta testattiin GitHub Pagesissa julkaistulla versiolla:
 
 https://maguun.github.io/tehtavalista/
 
-Testauksessa kokeiltiin tehtävien lisäämistä, näyttämistä, valmiiksi merkitsemistä, tallennuksen säilymistä, poistamista ja tyhjän syötteen käsittelyä.
+Testauksessa tarkistettiin tehtävien lisääminen, näyttäminen, valmiiksi merkitseminen, tallennuksen säilyminen, poistaminen sekä virheellisten syötteiden käsittely.
 
 ### Suoritetut testit
 
 | Testi | Vaatimus | Testitapa | Odotettu tulos | Havaittu tulos | Tila |
 |---|---|---|---|---|---|
-| T1 | V1 | Lisättiin tehtävä | Tehtävä näkyy listassa | Tehtävä ilmestyi listaan | Hyväksytty |
-| T2 | V2 | Lisättiin toinen tehtävä | Molemmat tehtävät näkyvät | Molemmat tehtävät näkyivät | Hyväksytty |
-| T3 | V3 | Merkittiin tehtävä valmiiksi | Tehtävän tila muuttuu | Tehtävän tila muuttui | Hyväksytty |
-| T4 | V5 | Päivitettiin sivu | Tehtävät ja niiden tilat säilyvät | Tehtävät ja valmiustila säilyivät | Hyväksytty |
-| T5 | V4 | Poistettiin tehtävä | Tehtävä katoaa listasta | Tehtävä poistui listasta | Hyväksytty |
+| T1 | V1 | Lisättiin tehtävä | Tehtävä ilmestyy listaan | Tehtävä ilmestyi listaan | Hyväksytty |
+| T2 | V2 | Lisättiin toinen tehtävä | Molemmat tehtävät näkyvät | Molemmat näkyivät listassa | Hyväksytty |
+| T3 | V3 | Merkittiin tehtävä valmiiksi | Tehtävän tila muuttuu valmiiksi | Tila muuttui onnistuneesti | Hyväksytty |
+| T4 | V5 | Päivitettiin sivu | Tehtävät ja niiden tilat säilyvät | Tehtävät ja tilat säilyivät | Hyväksytty |
+| T5 | V4 | Poistettiin tehtävä | Tehtävä poistuu listalta | Tehtävä poistui | Hyväksytty |
 | T6 | V6 | Yritettiin lisätä tyhjä tehtävä | Tyhjää tehtävää ei lisätä | Tyhjää tehtävää ei lisätty | Hyväksytty |
+| T7 | V6 | Syötettiin vain välilyöntejä ja painettiin Lisää | Tehtävää ei lisätä | Tehtävää ei lisätty | Hyväksytty |
+| T8 | V4, V5 | Lisättiin tehtävä, poistettiin se ja päivitettiin sivu | Poistettu tehtävä ei ilmesty takaisin | Tehtävä pysyi poistettuna | Hyväksytty |
 
 ### Testauksen yhteenveto
 
-- Suoritettuja testejä: 6
-- Hyväksyttyjä testejä: 6
-- Epäonnistuneita testejä: 0
+- Suoritettuja testejä: **8**
+- Hyväksyttyjä testejä: **8**
+- Hylättyjä testejä: **0**
+- Testauksen onnistumisprosentti: **100 % suoritetuista testeistä**
 
-Kaikki suoritetut testit vastasivat odotettua toimintaa.
+Kaikki kahdeksan suoritettua testiä vastasivat odotettua toimintaa.
 
-Testaus osoittaa, että sovelluksen keskeiset tehtävien hallintatoiminnot toimivat kokeilluissa tilanteissa.
+Erityisesti T7 vahvisti, että sovellus estää pelkistä välilyönneistä koostuvien tehtävien lisäämisen. T8 puolestaan osoitti, että poistettu tehtävä pysyy poistettuna myös sivun päivittämisen jälkeen.
 
-Vaatimuksen V6 pelkkiä välilyöntejä sisältävää syötettä ja vaatimuksen V7 kirjautumattoman käytön testausta ei ole vielä kirjattu erillisiksi testeiksi. Myöskään poistetun tehtävän pysyvyyttä sivun päivittämisen jälkeen ei vielä varmistettu erikseen.
+### Testauksen kattavuus
+
+Testit kattavat projektin keskeiset toiminnalliset vaatimukset V1–V6. Vaatimuksen V7 (käyttö ilman kirjautumista) erillistä hyväksymistestiä ei ole vielä kirjattu.
+
+Testit eivät yksin osoita sovelluksen toimivuutta kaikilla selaimilla tai laitteilla.
 
 ## 5. Testauksen johtopäätökset
 
 Suoritettujen testien perusteella tehtävälistasovelluksen keskeiset ominaisuudet toimivat odotetusti.
 
-Käyttäjä pystyi lisäämään ja poistamaan tehtäviä, merkitsemään tehtävän valmiiksi sekä säilyttämään tehtävät sivun päivittämisen jälkeen.
+Käyttäjä pystyy lisäämään tehtäviä, tarkastelemaan niitä, merkitsemään niitä valmiiksi ja poistamaan tarpeettomia tehtäviä.
 
-Myös tyhjän tehtävän lisäämisen estäminen toimi odotetusti.
+Selaimen paikallinen tallennus säilyttää tehtävät ja niiden tilat sivun päivittämisen jälkeen. Lisäksi ohjelmisto estää tyhjät ja pelkkiä välilyöntejä sisältävät syötteet.
 
-Testit tukevat johtopäätöstä, että sovellus soveltuu yksinkertaiseen tehtävien hallintaan. Varsinainen käyttäjätarpeen validointi dokumentoidaan erikseen käytännön käyttökokeilun jälkeen.
+Kaikki kahdeksan suoritettua testiä hyväksyttiin. Testaus tukee johtopäätöstä, että sovelluksen toteutus vastaa sen keskeisiä toiminnallisia vaatimuksia kokeilluissa tilanteissa.
 
-Testaus ei vielä osoita sovelluksen toimintaa kaikilla selaimilla tai laitteilla.
+Käyttäjätarpeen validointi käsitellään erikseen käytännön käyttökokeilun perusteella.
 
 ## 6. Virhe- ja rajatapausten testaus
 
