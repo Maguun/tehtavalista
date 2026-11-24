@@ -42,4 +42,5 @@ Tehtävät tallentuvat vain käytettävään selaimeen. Ne eivät siirry automaa
 
 ## Projektin tekijät
 
-Projektin tekijöiden nimet ja GitHub-käyttäjätunnukset lisätään tähän ennen lopullista palautusta.
+- Tom Carlas, velmuelli-dev
+- Max Vehman, Maguun  
