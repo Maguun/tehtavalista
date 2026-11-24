@@ -122,6 +122,14 @@ Validoinnissa arvioidaan, onnistuuko käyttäjän tavoite ja helpottaako sovellu
 
 Kokeilu tehdään sovelluksen valmistuttua. Kokeilun tekijä, havainnot ja johtopäätökset kirjataan tähän dokumenttiin.
 
+Käytännön kokeilu:
+
+Sovellusta kokeiltiin käytännössä lisäämällä, merkitsemällä valmiiksi ja poistamalla tehtäviä. Lisäksi tarkistettiin tehtävien säilyminen sivun päivittämisen jälkeen.
+
+Kaikki kahdeksan testiä onnistuivat. Sovellus mahdollistaa tehtävien hallinnan ja niiden valmistumisen seuraamisen yhdessä paikassa.
+
+Johtopäätös: Sovellus vastaa alkuperäiseen käyttäjätarpeeseen kokeiltujen toimintojen osalta. Testaus tehtiin itse, joten pidempiaikaista hyötyä tai muiden käyttäjien kokemuksia ei vielä arvioitu.
+
 ## 8. Tunnetut rajoitukset
 
 Suunnitellun toteutuksen rajoituksia ovat:
