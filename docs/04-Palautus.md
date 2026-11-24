@@ -26,7 +26,7 @@ Testitulokset ja käyttäjätarpeen validointi löytyvät tiedostosta [03-testau
 
 ## Projektin arvioitava versio
 
-**Täydellinen commit-tunniste:** Lisätään lopullisen version tallentamisen jälkeen.
+**Täydellinen commit-tunniste:** ed3cc77b48d58823abeccd53adb6a8fc95606cae
 
 **Palautuspäivä:** 24.11.
 ## Projektivideo
